@@ -29,7 +29,6 @@ public class Course {
     public String getCode() { return code; }
     public String getTitle() { return title; }
 
-    // ⭐ ADD THIS so TestDataInserter can update the join-table correctly
     public Set<Student> getStudents() {
         return students;
     }
