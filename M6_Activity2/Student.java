@@ -8,7 +8,7 @@ public class Student {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;  // INTEGER to match 'SERIAL' in PostgreSQL
+    private Integer id;  
 
     @Column(name = "name", nullable = false, columnDefinition = "VARCHAR(50)")
     private String name;
@@ -19,7 +19,7 @@ public class Student {
     @Column(name = "email", unique = true, columnDefinition = "VARCHAR(100)")
     private String email;
 
-    // --- Constructors ---
+
     public Student() {}
 
     public Student(String name, Integer age, String email) {
@@ -28,7 +28,7 @@ public class Student {
         this.email = email;
     }
 
-    // --- Getters & Setters ---
+
     public Integer getId() { return id; }
 
     public String getName() { return name; }
@@ -40,7 +40,7 @@ public class Student {
     public String getEmail() { return email; }
     public void setEmail(String email) { this.email = email; }
 
-    // --- Optional: handy for logs ---
+
     @Override
     public String toString() {
         return "Student{id=" + id +
