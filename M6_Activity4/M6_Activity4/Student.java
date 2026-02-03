@@ -26,7 +26,6 @@ public class Student {
         this.name = name;
     }
 
-    // ✅ REQUIRED METHODS (fixes compiler errors)
     public Long getId() {
         return id;
     }
