@@ -8,18 +8,17 @@
   <persistence-unit name="m6PU" transaction-type="RESOURCE_LOCAL">
     <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 
-    <!-- Register your entity here -->
+
     <class>M6_Activity2.Student</class>
 
     <properties>
-      <!-- JDBC -->
+
       <property name="jakarta.persistence.jdbc.driver" value="org.postgresql.Driver"/>
       <property name="jakarta.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/sandboxdb"/>
       <property name="jakarta.persistence.jdbc.user" value="cjbgo"/>
       <property name="jakarta.persistence.jdbc.password" value=""/>
 
-      <!-- Hibernate -->
-      <!-- You may remove hibernate.dialect; Hibernate 7 auto-detects it -->
+   
       <property name="hibernate.show_sql" value="true"/>
       <property name="hibernate.format_sql" value="true"/>
       <property name="hibernate.hbm2ddl.auto" value="validate"/>
