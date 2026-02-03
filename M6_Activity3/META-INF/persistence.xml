@@ -7,11 +7,11 @@
   <persistence-unit name="sandboxPU" transaction-type="RESOURCE_LOCAL">
     <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 
-    <!-- ✅ List entity classes first -->
+   
     <class>M6_Activity3.Student</class>
     <class>M6_Activity3.Course</class>
 
-    <!-- ✅ Then exclude unlisted classes to avoid duplicate Student entities -->
+
     <exclude-unlisted-classes>true</exclude-unlisted-classes>
 
     <properties>
