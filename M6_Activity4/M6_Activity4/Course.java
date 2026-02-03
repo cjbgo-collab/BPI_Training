@@ -38,7 +38,7 @@ public class Course {
         return title;
     }
 
-    // ✅ Setters (required)
+
     public void setCode(String code) {
         this.code = code;
     }
