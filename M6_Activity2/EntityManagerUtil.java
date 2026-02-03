@@ -10,7 +10,7 @@ public class EntityManagerUtil {
     private final EntityManagerFactory emf;
 
     private EntityManagerUtil() {
-        // 'm6PU' must match the persistence-unit name in persistence.xml
+
         this.emf = Persistence.createEntityManagerFactory("m6PU");
     }
 
