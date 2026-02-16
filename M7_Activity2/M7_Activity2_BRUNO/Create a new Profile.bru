@@ -1,0 +1,29 @@
+meta {
+  name: Create a new Profile
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:4568/profiles
+  body: json
+  auth: inherit
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "id": 4,
+    "name": "CJ Go",
+    "group": "ISG"
+  }
+  
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

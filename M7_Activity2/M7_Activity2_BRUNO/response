@@ -1,0 +1,1 @@
+{"data":[{"id":1,"name":"Jose Rizal","group":"Illustrados","apiCallsMade":null},{"id":3,"name":"Antonio Luna","group":"Illustrados","apiCallsMade":null},{"id":4,"name":"CJ Go","group":"ISG","apiCallsMade":["GET: /profiles","POST: /profiles","PUT: /profiles","DELETE: /profiles"]}],"status":"Success"}
