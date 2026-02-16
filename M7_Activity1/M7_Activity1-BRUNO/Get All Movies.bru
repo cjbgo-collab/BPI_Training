@@ -1,0 +1,16 @@
+meta {
+  name: Get All Movies
+  type: http
+  seq: 1
+}
+
+get {
+  url: http://localhost:4567/movies
+  body: text
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
