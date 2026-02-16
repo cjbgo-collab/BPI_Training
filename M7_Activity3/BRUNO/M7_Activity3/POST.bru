@@ -1,0 +1,26 @@
+meta {
+  name: POST
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:4567/movies
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "title": "The Godfather",
+    "director": "Francis Ford Coppola",
+    "showingDate": "1972-03-24"
+  }
+  
+  
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
