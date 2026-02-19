@@ -17,9 +17,9 @@ public class App {
         System.out.println(count);
 
         System.out.println("\n--- Students Older Than 20 ---");
+       System.out.println("\n--- Count of Students Older Than 20 ---");
         List<Student> students = service.findStudentsByAgeGreaterThan(20);
-        students.forEach(s ->
-            System.out.println(s.getName() + " " + s.getAge())
+        System.out.println(students.size());
         );
     }
 }
