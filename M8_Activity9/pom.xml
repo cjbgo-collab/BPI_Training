@@ -1,0 +1,86 @@
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  
+  <!-- Use your own coordinates if you like -->
+  <groupId>ph.com.bpi.training</groupId>
+  <artifactId>M8_API</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>M8_API</name>
+
+  <!-- Spring Boot BOM/parent manages dependency versions -->
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>3.3.4</version>
+    <relativePath/>
+  </parent>
+
+  <properties>
+    <java.version>21</java.version>
+    <!-- Tell Boot which main class to use (matches your package: M8_Activity1.App) -->
+    <start-class>M8_Activity1.App</start-class>
+  </properties>
+
+  <dependencies>
+    <!-- Core Boot features and logging -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter</artifactId>
+    </dependency>
+
+    <!-- Web + embedded Tomcat + JSON -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+
+    <!-- (Optional) Health endpoints -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-actuator</artifactId>
+    </dependency>
+
+    <!-- Tests -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-test</artifactId>
+      <scope>test</scope>
+    </dependency>
+    
+<dependency>
+  <groupId>org.springframework.boot</groupId>
+  <artifactId>spring-boot-starter-web</artifactId>
+</dependency>
+<dependency>
+  <groupId>org.springframework.boot</groupId>
+  <artifactId>spring-boot-starter-validation</artifactId>
+</dependency>
+
+  </dependencies>
+
+
+ 
+<build>
+  <plugins>
+    <plugin>
+  <artifactId>maven-compiler-plugin</artifactId>
+  <version>3.13.0</version>
+  <configuration>
+    <release>21</release>
+    <parameters>true</parameters> <!-- This is the key -->
+  </configuration>
+</plugin>
+
+    <plugin>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-maven-plugin</artifactId>
+    </plugin>
+  </plugins>
+</build>
+
+</project>
+
+
