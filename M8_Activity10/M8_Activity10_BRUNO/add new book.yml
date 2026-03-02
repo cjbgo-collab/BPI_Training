@@ -1,0 +1,22 @@
+info:
+  name: "add new book "
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: http://localhost:8080/api/books
+  body:
+    type: json
+    data: |-
+      {
+        "title": "Microservices Patterns",
+        "author": "Chris Richardson"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
