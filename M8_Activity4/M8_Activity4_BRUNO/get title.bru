@@ -1,0 +1,20 @@
+meta {
+  name: get title
+  type: http
+  seq: 4
+}
+
+get {
+  url: http://localhost:8080/api/books/findByTitle?title=Effective Java
+  body: none
+  auth: inherit
+}
+
+params:query {
+  title: Effective Java
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
