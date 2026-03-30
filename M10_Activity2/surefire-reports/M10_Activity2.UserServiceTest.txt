@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: M10_Activity2.UserServiceTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.331 s -- in M10_Activity2.UserServiceTest
