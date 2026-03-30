@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Build-Jdk-Spec: 21
+Implementation-Title: M9_SECURITY
+Implementation-Version: 0.0.1-SNAPSHOT
+Main-Class: M9_Activity7.App
+Created-By: Maven Integration for Eclipse
+
